@@ -34,5 +34,5 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: nginx
-  type: NodePort
+    type: ExternalName
+    externalName: niraj-hp-z820-workstation.auth.hpicorp.net
