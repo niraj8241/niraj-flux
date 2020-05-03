@@ -29,10 +29,10 @@ metadata:
     app: nginx
 spec:
   ports:
-  - name: http
+  - name: web
     port: 8080
     protocol: TCP
     targetPort: 80
   selector:
-    type: ExternalName
-    externalName: niraj-hp-z820-workstation.auth.hpicorp.net
+    type: NodePort
+    app: nginx
